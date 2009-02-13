@@ -15,12 +15,12 @@ get '/' do
 end
 
 # Storekeeper page
-get '/storekeeper' do
+get '/tools/storekeeper' do
   "Storekeeper page"
 end
 
 # Storekeeper API key page
-get '/storekeeper/auth' do
+get '/tools/storekeeper/auth' do
   @shop_url = params[:shop]
   @auth_key = params[:t]
   "Shop: #{@shop_url} - Key: #{@auth_key}"
