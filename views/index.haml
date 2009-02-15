@@ -5,93 +5,22 @@
     %link{:rel => "stylesheet", :href => "stylesheets/style.css"}
     %meta{'http-equiv' => "Content-Type", :content => "text/html;charset=utf-8"}
   %body
-    #maincontainer
+    #wrap
       #header
-        .container
-          .left
-            %img{:src => "images/logo.png", :alt => "robot antenna"}
-          .right
-            %img{:src => "images/robot_01.png", :alt => "robot antenna"}
-      .banner.clearfix
-        .container
-          .left
-            %h2 We have the technology.
-            %p Your business, better than it was before. Better, stronger, faster.
-            %p 
-              We can help you improve, create, sell, advertise, and secure your business
-              or product using the latest web technologies and best practices. We focus on
-              collaboration, agile development, and making things look good.
-            %p
-              %a{:href => "mailto:activate@robotmo.de"} Click here to activate Robot Mode
-          .right
-            %img{:src => "images/robot_02.png", :alt => "robot upper"}
-      .meta.clearfix
-        .container.clearfix
-          .left
-            %h2 What We Do
-            %ul
-              %li{:class => "listhead"} Development
-              %li
-                Web application development with
-                %em Ruby on Rails
-                and
-                %em Adobe Flex
-              %li
-                Desktop application development with
-                %em Adobe AIR
-              %li
-                %em eCommerce solutions
-                for digital and physical goods
-            %ul
-              %li{:class => "listhead"} Consulting
-              %li
-                Traffic analytics and online advertising
-              %li
-                Software development
-                %em best practices
-                and workflow
-              %li
-                Network and application security
-          .right
-            %img{:src => "images/robot_03.png", :alt => "robot lower"}
-        .container.clearfix
-          .projects
-            %h2 Projects
-            .projectlist
-              .project
-                %img{:width => "180", :height => "180", :src => "images/projects/nightlife.png", :alt => "http://nightlife-fashions.com" }
-                .caption
-                  %h3 Nightlife Fashions
-                  %p eCommerce and online marketing for San Diego boutique
-              .addproject
-                %a{:href => "mailto:activate@robotmo.de"} Add your project!
-        .container.clearfix
-          .aboutus
-            %h2 About Us
-            %p
-              Robot Mode LLC is a small, agile development company located in the heart of sunny
-              downtown San Diego, California, right next to Horton Plaza and the Gaslamp District.
-              When we're not hammering away at code, we frequent
-              %a{:href => "http://www.thelocalsandiego.com/"} The Local
-              and
-              %a{:href => "http://bowlevt.com/"} East Village Tavern &amp; Bowl
-              \.
-            %p
-              Collectively, we have backgrounds in Ruby on Rails, Adobe AIR, Adobe Flex,
-              adult digital media, high-traffic commercial websites, Top Secret military
-              networks, aircraft carriers, and user experience design.
+        %h1 Robot Mode LLC
+      #main
+        %h2 Column 1
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      #sidebar
+        %h3 Column 2
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       #footer
-        .container
-          %p
-            %a{:href => "mailto:activate@robotmo.de"} activate@robotmo.de
-            \/
-            %a{:href => "http://validator.w3.org/check?uri=referer"} Valid XHTML
-            \ / Copyright &copy;2009 Robot Mode LLC
-    :javascript
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    :javascript
-      try {
-      var pageTracker = _gat._getTracker("UA-7186260-1");
-      pageTracker._trackPageview();
-      } catch(err) {}
+        %p Copyright &copy; 2009 Robot Mode LLC
+      :javascript
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      :javascript
+        try {
+        var pageTracker = _gat._getTracker("UA-7186260-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
