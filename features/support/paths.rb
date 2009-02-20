@@ -5,7 +5,8 @@ module NavigationHelpers
     when /the homepage/i
       root_path
     
-    # Add more page name => path mappings here
+    when /the Robot Mailer product page/i
+      "/mailer"
     
     else
       raise "Can't find mapping from \"#{page_name}\" to a path."
