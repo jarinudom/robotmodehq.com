@@ -1,0 +1,93 @@
+!!! XML
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", 'xml:lang' => "en", :lang => "en"}
+  %head
+    %title Robot Mode LLC - Adobe Air, Flex, and Ruby on Rails Application Development
+    %link{:rel => "stylesheet", :href => "stylesheets/application.css"}
+    %meta{'http-equiv' => "Content-Type", :content => "text/html;charset=utf-8"}
+    %script{:src => "/js-global/FancyZoom.js", :type => "text/javascript"}
+    %script{:src => "/js-global/FancyZoomHTML.js", :type => "text/javascript"}
+  %body{:onload => "setupZoom()"}
+    #robotwrapper
+      #wrap
+    
+        #header
+          %ul#topnav
+            %li
+              %a{:href => "http://robotmode.basecamphq.com"} client login
+            %li
+              %a{:href => "http://mailer.robotmo.de"} robot mailer login
+            %li.last
+              %a{:href => "mailto:activate@robotmo.de"} contact us
+          %a{:href => "/"}
+            %img{:src => "/images/header_logo.png", :alt => "Robot Mode LLC logo"}
+          
+        #content
+          #main
+            = yield 
+                  
+          #sidebar
+            = yield :sidebar_top
+            %h2 We have the technology.
+            %p Your business, better than it was before. Better, stronger, faster.
+            %p
+              We can help you improve, create, sell, advertise, and secure your business
+              or product using the latest web technologies and best practices. We focus on
+              collaboration, agile development, and making things look good.
+            %h2 What We Do
+            %ul
+              %li{:class => "listhead"} Development
+              %li Web apps with Ruby on Rails and Adobe Flex
+              %li Desktop application development with Adobe AIR
+              %li eCommerce for digital and physical goods
+            %ul
+              %li{:class => "listhead"} Consulting
+              %li Traffic analytics and online advertising
+              %li Development best practices and workflow
+              %li Network and application security
+              
+            %h2 Stay in Touch
+            %p Sign up for our mailing list to find out about new products and services.
+            %form{:action => "http://mailer.robotmo.de/t/r/s/fktud/", :method => "post"}
+              %p
+                %label{:for => "name"}
+                  Name:
+                %br
+                %input{:type => "text", :name => "cm-name", :id => "name"}
+                %br
+                %label{:for => "fktud-fktud"}
+                  Email:
+                %br
+                %input{:type =>"text", :name => "cm-fktud-fktud", :id => "fktud-fktud"}
+                %input{:type => "submit", :value => "Subscribe"}
+                %br
+                %span.subtext
+                  Powered by Robot Mailer
+            %h2 About Us
+            %p
+              Robot Mode LLC is a small, agile development company located in the heart of sunny
+              downtown San Diego, California, right next to Horton Plaza and the Gaslamp District.
+              When we're not hammering away at code, we frequent
+              %a{:href => "http://www.thelocalsandiego.com/"} The Local
+              and
+              %a{:href => "http://bowlevt.com/"} East Village Tavern &amp; Bowl
+              \.
+            %p
+              Collectively, we have backgrounds in Ruby on Rails, Adobe AIR, Adobe Flex,
+              adult digital media, high-traffic commercial websites, Top Secret military
+              networks, aircraft carriers, and user experience design.
+          
+        #footer
+          %p
+            %a{:href => "mailto:activate@robotmo.de"} activate@robotmo.de
+            \/
+            %a{:href => "http://validator.w3.org/check?uri=referer"} Valid XHTML
+            \ / Copyright &copy;2009 Robot Mode LLC
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-7186260-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
