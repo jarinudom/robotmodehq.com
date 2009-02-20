@@ -1,2 +1,66 @@
-<h1>Mailer#index</h1>
-<p>Find me in app/views/mailer/index.html.erb</p>
+%h1 Introducing Robot Mailer
+%p
+  Robot Mailer is a new service we've put together for just one purpose - helping you kick ass at email marketing. No setup fee, no monthly fees, and each mailer is only $5 plus 2 cents per recipient.
+  %a{:href => "mailto:activate@robotmo.de?subject=I want to get started with Robot Mailer!"}Email us to get started!
+
+#mailer-features
+  .feature-row
+    .icon
+      %img{:src => "/images/robotmailer/envelope_go.png", :width => "48px", :height => "48px", :alt => "Create and send email campaigns"}
+    .feature-text
+      %h3 Create and send email campaigns
+      %p Import your custom HTML and CSS with a single click. Use our integrated testing tools to make sure they look great in all web and desktop email programs and don't get stuck in spam filters.
+
+  .feature-row
+    .icon
+      %img{:src => "/images/robotmailer/vcard.png", :width => "48px", :height => "48px", :alt => "Create and send email campaigns"}
+    .feature-text
+      %h3 Manage lists and subscribers
+      %p We take all the pain out of list management by handling the messy stuff like bounces and unsubscribes automatically. Whether you've got a small list, or need to get your hands dirty with segmenting and personalization, we've got you covered.
+  
+  .feature-row
+    .icon
+      %img{:src => "/images/robotmailer/chart_pie.png", :width => "48px", :height => "48px", :alt => "Create and send email campaigns"}
+    .feature-text
+      %h3 Reporting and analytics
+      %p Great looking reports that allow you to accurately measure the effectiveness of every campaign you send. Go beyond opens and link clicks and measure your campaign related sales, conversions and ROI with our Google Analytics integration.
+      
+.more-mailer-features
+  .left
+    %a{:href => "/images/robotmailer/campaign-snapshot-lg.png"}
+      %img{:src => "/images/robotmailer/campaign-snapshot-lg.png", :width => "240", :height => "180", :alt => "Campaign Snapshot"}
+    %h3 Campaign Snapshot
+    %p See how your email campaign has performed at a glance. Find out how many recipients opened your email, clicked a link, unsubscribed, forwarded your email to a friend and loads more.
+  .right
+    %a{:href => "/images/robotmailer/opens-over-time-lg.png"}
+      %img{:src => "/images/robotmailer/opens-over-time-lg.png", :width => "240", :height => "180", :alt => "Opens Over Time"}
+    %h3 Opens Over Time
+    %p See exactly who is checking out your email, how many times they’re doing it, and when they did it. Get an overview for the life of the campaign or drill down all the way to minute by minute detail.
+    
+.more-mailer-features
+  .left
+    %a{:href => "/images/robotmailer/recpient-activity-lg.png"}
+      %img{:src => "/images/robotmailer/recpient-activity-lg.png", :width => "240", :height => "180", :alt => "Recipient Activity"}
+    %h3 Recipient Activity
+    %p Get down to some serious detail on your campaign. Easily see who opened, who clicked, who bounced and who unsubscribed. You can even search for a specific subscriber to see exactly what they did with your email.
+  .right
+    %a{:href => "/images/robotmailer/bounce-summary-lg.png"}
+      %img{:src => "/images/robotmailer/bounce-summary-lg.png", :width => "240", :height => "180", :alt => "Bounce Summary"}
+    %h3 Bounce Summary
+    %p As well as automatically processing any bounced emails for you, we tell you exactly why that subscriber bounced out of your list. Maybe we got an out of office reply, or perhaps their mailbox was full - whatever the reason, they didn’t get your email and we’ll tell you why.
+    
+.more-mailer-features
+  .left
+    %a{:href => "/images/robotmailer/link-activity-lg.png"}
+      %img{:src => "/images/robotmailer/link-activity-lg.png", :width => "240", :height => "180", :alt => "Link Activity"}
+    %h3 Link Activity
+    %p The Link Activity Report makes it very easy to see what your subscribers found most interesting, as well as who clicked and who did not.
+  .right
+    %a{:href => "/images/robotmailer/compare-campaigns-lg.png"}
+      %img{:src => "/images/robotmailer/compare-campaigns-lg.png", :width => "240", :height => "180", :alt => "Compare Campaigns"}
+    %h3 Compare Campaigns
+    %p Easily compare any of your email campaign with each other. Is your open rate improving? Are you seeing less bounces over time?
+
+.clear
+  %a{:href => "mailto:activate@robotmo.de?subject=I want to get started with Robot Mailer!"}
+    %img{:src => "/images/startbutton.png", :alt => "Get Started"}
