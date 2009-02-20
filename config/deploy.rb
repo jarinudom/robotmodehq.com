@@ -30,6 +30,8 @@ set :scm, "git"
 set :deploy_via, :remote_cache 
 set :repository, "git@github.com:jarinudom/robotmo.de.git"
 set :git_enable_submodules, 1
+set :branch, "master"
+set :git_shallow_clone, 1
 
 # =============================================================================
 # SSH OPTIONS
