@@ -1,47 +1,78 @@
-# This file is copied to ~/spec when you run 'ruby script/generate rspec'
-# from the project root directory.
+# spec helper settings.
+# For more information take a look at Spec::Example::Configuration and Spec::Runner
+
 ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
-require 'spec/autorun'
+require File.expand_path(File.dirname(__FILE__) + "/blueprints")
+require 'spec'
 require 'spec/rails'
 
 Spec::Runner.configure do |config|
-  # If you're not using ActiveRecord you should remove these
-  # lines, delete config/database.yml and disable :active_record
-  # in your config/boot.rb
+  # Active Record: remove if not using AR
   config.use_transactional_fixtures = true
   config.use_instantiated_fixtures  = false
-  config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
 
-  # == Fixtures
-  #
-  # You can declare fixtures for each example_group like this:
-  #   describe "...." do
-  #     fixtures :table_a, :table_b
-  #
-  # Alternatively, if you prefer to declare them only once, you can
-  # do so right here. Just uncomment the next line and replace the fixture
-  # names with your fixtures.
-  #
-  # config.global_fixtures = :table_a, :table_b
-  #
-  # If you declare global fixtures, be aware that they will be declared
-  # for all of your examples, even those that don't use them.
-  #
-  # You can also declare which fixtures to use (for example fixtures for test/fixtures):
-  #
-  # config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
-  #
+  # reset our shams
+  config.before(:each) { Sham.reset }
+
   # == Mock Framework
-  #
-  # RSpec uses it's own mocking framework by default. If you prefer to
-  # use mocha, flexmock or RR, uncomment the appropriate line:
-  #
-  # config.mock_with :mocha
-  # config.mock_with :flexmock
-  # config.mock_with :rr
-  #
-  # == Notes
-  # 
-  # For more information take a look at Spec::Runner::Configuration and Spec::Runner
+  config.mock_with :mocha
 end
+
+class ActiveRecord::Base
+  def self.mock_saved(params = {})
+    valid_columns = self.columns_hash.collect { |k,v| k }
+    params = params.dup
+    id = params.delete(:id)
+    stubs = {}
+    params.each do |attr_name, value|
+      stubs[attr_name] = params.delete(attr_name) unless valid_columns.include?(attr_name)
+    end
+    instance = self.new(params)
+    instance.stubs(:save).returns(true) unless stubs.has_key?(:save)
+    instance.stubs(:new_record?).returns(stubs.delete(:new_record?) { |key| true })
+    stubs.each do |meth, value|
+      instance.stubs(meth).returns(value)
+    end
+    instance.stubs(:id).returns(id)
+    instance.stubs(:to_param).returns(id.to_s)
+    return instance
+  end
+end
+
+class Class
+  def publicize_methods
+    saved_private_instance_methods = self.private_instance_methods
+    saved_protected_instance_methods = self.protected_instance_methods
+    self.class_eval do
+      public *saved_private_instance_methods
+      public *saved_protected_instance_methods
+    end
+    
+    yield
+    
+    self.class_eval do
+      private *saved_private_instance_methods
+      protected *saved_protected_instance_methods
+    end
+  end
+end
+
+suppress LoadError do
+  require 'ruby-debug'
+end
+
+
+# Taken from http://wincent.com/knowledge-base/Fixtures_considered_harmful%3F
+class Hash
+  # for excluding keys
+  def except(*exclusions)
+    self.reject { |key, value| exclusions.include? key.to_sym }
+  end
+ 
+  # for overriding keys
+  def with(overrides = {})
+    self.merge overrides
+  end
+end
+
