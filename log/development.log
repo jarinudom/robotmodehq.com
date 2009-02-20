@@ -27,3 +27,149 @@ Migrating to CreateSessions (20090220055507)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+Rendering home/index
+Completed in 28ms (View: 26 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/js-global/FancyZoom.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/js-global/FancyZoomHTML.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/body_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/header_logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/envelope_go.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/vcard.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/chart_pie.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/campaign-snapshot-lg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/opens-over-time-lg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/recpient-activity-lg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/startbutton.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/link-activity-lg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/compare-campaigns-lg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robotmailer/bounce-summary-lg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/robot_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-19 22:07:39) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-19 22:08:43) [GET]
+Rendering home/index
+Completed in 3ms (View: 1 | 200 OK [http://localhost/home]

@@ -1,0 +1,159 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", 'xml:lang' => "en", :lang => "en"}
+  %head
+    %title Robot Mode LLC - Adobe Air, Flex, and Ruby on Rails Application Development
+    %link{:rel => "stylesheet", :href => "stylesheets/application.css"}
+    %meta{'http-equiv' => "Content-Type", :content => "text/html;charset=utf-8"}
+    %script{:src => "/js-global/FancyZoom.js", :type => "text/javascript"}
+    %script{:src => "/js-global/FancyZoomHTML.js", :type => "text/javascript"}
+  %body{:onload => "setupZoom()"}
+    #robotwrapper
+      #wrap
+    
+        #header
+          %ul#topnav
+            %li
+              %a{:href => "http://robotmode.basecamphq.com"} client login
+            %li
+              %a{:href => "http://mailer.robotmo.de"} robot mailer
+            %li.last
+              %a{:href => "mailto:activate@robotmo.de"} contact us
+          %a{:href => "/"}
+            %img{:src => "/images/header_logo.png", :alt => "Robot Mode LLC logo"}
+          
+        #content
+          #main
+            %h1 Introducing Robot Mailer
+            %p
+              Robot Mailer is a new service we've put together for just one purpose - helping you kick ass at email marketing. No setup fee, no monthly fees, and each mailer is only $5 plus 2 cents per recipient.
+              %a{:href => "mailto:activate@robotmo.de?subject=I want to get started with Robot Mailer!"}Email us to get started!
+          
+            #mailer-features
+              .feature-row
+                .icon
+                  %img{:src => "/images/robotmailer/envelope_go.png", :width => "48px", :height => "48px", :alt => "Create and send email campaigns"}
+                .feature-text
+                  %h3 Create and send email campaigns
+                  %p Import your custom HTML and CSS with a single click. Use our integrated testing tools to make sure they look great in all web and desktop email programs and don't get stuck in spam filters.
+            
+              .feature-row
+                .icon
+                  %img{:src => "/images/robotmailer/vcard.png", :width => "48px", :height => "48px", :alt => "Create and send email campaigns"}
+                .feature-text
+                  %h3 Manage lists and subscribers
+                  %p We take all the pain out of list management by handling the messy stuff like bounces and unsubscribes automatically. Whether you've got a small list, or need to get your hands dirty with segmenting and personalization, we've got you covered.
+              
+              .feature-row
+                .icon
+                  %img{:src => "/images/robotmailer/chart_pie.png", :width => "48px", :height => "48px", :alt => "Create and send email campaigns"}
+                .feature-text
+                  %h3 Reporting and analytics
+                  %p Great looking reports that allow you to accurately measure the effectiveness of every campaign you send. Go beyond opens and link clicks and measure your campaign related sales, conversions and ROI with our Google Analytics integration.
+              
+              .more-mailer-features
+                %h2 But wait, there's more...
+                
+              .more-mailer-features
+                .left
+                  %a{:href => "/images/robotmailer/campaign-snapshot-lg.png"}
+                    %img{:src => "/images/robotmailer/campaign-snapshot-lg.png", :width => "240", :height => "180", :alt => "Campaign Snapshot"}
+                  %h3 Campaign Snapshot
+                  %p See how your email campaign has performed at a glance. Find out how many recipients opened your email, clicked a link, unsubscribed, forwarded your email to a friend and loads more.
+                .right
+                  %a{:href => "/images/robotmailer/opens-over-time-lg.png"}
+                    %img{:src => "/images/robotmailer/opens-over-time-lg.png", :width => "240", :height => "180", :alt => "Opens Over Time"}
+                  %h3 Opens Over Time
+                  %p See exactly who is checking out your email, how many times they’re doing it, and when they did it. Get an overview for the life of the campaign or drill down all the way to minute by minute detail.
+                  
+              .more-mailer-features
+                .left
+                  %a{:href => "/images/robotmailer/recpient-activity-lg.png"}
+                    %img{:src => "/images/robotmailer/recpient-activity-lg.png", :width => "240", :height => "180", :alt => "Recipient Activity"}
+                  %h3 Recipient Activity
+                  %p Get down to some serious detail on your campaign. Easily see who opened, who clicked, who bounced and who unsubscribed. You can even search for a specific subscriber to see exactly what they did with your email.
+                .right
+                  %a{:href => "/images/robotmailer/bounce-summary-lg.png"}
+                    %img{:src => "/images/robotmailer/bounce-summary-lg.png", :width => "240", :height => "180", :alt => "Bounce Summary"}
+                  %h3 Bounce Summary
+                  %p As well as automatically processing any bounced emails for you, we tell you exactly why that subscriber bounced out of your list. Maybe we got an out of office reply, or perhaps their mailbox was full - whatever the reason, they didn’t get your email and we’ll tell you why.
+                  
+              .more-mailer-features
+                .left
+                  %a{:href => "/images/robotmailer/link-activity-lg.png"}
+                    %img{:src => "/images/robotmailer/link-activity-lg.png", :width => "240", :height => "180", :alt => "Link Activity"}
+                  %h3 Link Activity
+                  %p The Link Activity Report makes it very easy to see what your subscribers found most interesting, as well as who clicked and who did not.
+                .right
+                  %a{:href => "/images/robotmailer/compare-campaigns-lg.png"}
+                    %img{:src => "/images/robotmailer/compare-campaigns-lg.png", :width => "240", :height => "180", :alt => "Compare Campaigns"}
+                  %h3 Compare Campaigns
+                  %p Easily compare any of your email campaign with each other. Is your open rate improving? Are you seeing less bounces over time?
+              
+              .clear
+                %a{:href => "mailto:activate@robotmo.de?subject=I want to get started with Robot Mailer!"}
+                  %img{:src => "/images/startbutton.png", :alt => "Get Started"}
+                  
+          #sidebar
+            %h2 We have the technology.
+            %p Your business, better than it was before. Better, stronger, faster.
+            %p
+              We can help you improve, create, sell, advertise, and secure your business
+              or product using the latest web technologies and best practices. We focus on
+              collaboration, agile development, and making things look good.
+            %h2 What We Do
+            %ul
+              %li{:class => "listhead"} Development
+              %li Web apps with Ruby on Rails and Adobe Flex
+              %li Desktop application development with Adobe AIR
+              %li eCommerce for digital and physical goods
+            %ul
+              %li{:class => "listhead"} Consulting
+              %li Traffic analytics and online advertising
+              %li Development best practices and workflow
+              %li Network and application security
+              
+            %h2 Stay in Touch
+            %p Sign up for our mailing list to find out about new products and services.
+            %form{:action => "http://mailer.robotmo.de/t/r/s/fktud/", :method => "post"}
+              %p
+                %label{:for => "name"}
+                  Name:
+                %br
+                %input{:type => "text", :name => "cm-name", :id => "name"}
+                %br
+                %label{:for => "fktud-fktud"}
+                  Email:
+                %br
+                %input{:type =>"text", :name => "cm-fktud-fktud", :id => "fktud-fktud"}
+                %input{:type => "submit", :value => "Subscribe"}
+                %br
+                %span.subtext
+                  Powered by Robot Mailer
+            %h2 About Us
+            %p
+              Robot Mode LLC is a small, agile development company located in the heart of sunny
+              downtown San Diego, California, right next to Horton Plaza and the Gaslamp District.
+              When we're not hammering away at code, we frequent
+              %a{:href => "http://www.thelocalsandiego.com/"} The Local
+              and
+              %a{:href => "http://bowlevt.com/"} East Village Tavern &amp; Bowl
+              \.
+            %p
+              Collectively, we have backgrounds in Ruby on Rails, Adobe AIR, Adobe Flex,
+              adult digital media, high-traffic commercial websites, Top Secret military
+              networks, aircraft carriers, and user experience design.
+          
+        #footer
+          %p
+            %a{:href => "mailto:activate@robotmo.de"} activate@robotmo.de
+            \/
+            %a{:href => "http://validator.w3.org/check?uri=referer"} Valid XHTML
+            \ / Copyright &copy;2009 Robot Mode LLC
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-7186260-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
