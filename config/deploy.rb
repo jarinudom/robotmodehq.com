@@ -28,7 +28,7 @@ set :deploy_to, "/home/#{user}/public_html/#{application}"
 # =============================================================================
 set :scm, "git"
 set :deploy_via, :remote_cache 
-set :repository, "/home/#{user}/reponame.git"
+set :repository, "git@github.com:jarinudom/robotmo.de.git"
 
 # =============================================================================
 # SSH OPTIONS
