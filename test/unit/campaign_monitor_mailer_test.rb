@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CampaignMonitorMailerTest < ActionMailer::TestCase
   test "confirm" do
-    @expected.subject = 'CampaignMonitorMailer#confirm'
+    @expected.subject = 'Please confirm your Robot Mailer account'
     @expected.body    = read_fixture('confirm')
     @expected.date    = Time.now
 

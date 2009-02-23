@@ -8,4 +8,5 @@ class MailerSignup < ActiveRecord::Base
   def generate_token
     @attributes['token'] = Digest::MD5.hexdigest((object_id + rand(255)).to_s)
   end
+  
 end

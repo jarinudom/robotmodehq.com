@@ -1,3 +1,5 @@
-CampaignMonitorMailer#confirm
+<p>Thank you for signing up for a Robot Mailer account!</p>
 
-Find me in app/views/campaign_monitor_mailer/confirm.erb
+<p>All we need to finish creating your account is for you to verify your email address by clicking the following link:</p>
+
+<p><a href="<%= verify_mailer_signup_url(@mailer_signup) %>?t=<%= @mailer_signup.token %>"></a></p>
