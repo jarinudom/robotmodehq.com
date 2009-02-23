@@ -3,8 +3,8 @@
 
 ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
-require File.expand_path(File.dirname(__FILE__) + "/blueprints")
-require 'spec'
+# require File.expand_path(File.dirname(__FILE__) + "/blueprints")
+require 'spec/autorun'
 require 'spec/rails'
 
 Spec::Runner.configure do |config|
