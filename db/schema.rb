@@ -9,7 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090220055507) do
+ActiveRecord::Schema.define(:version => 20090223104619) do
+
+  create_table "mailer_signups", :force => true do |t|
+    t.string   "email"
+    t.string   "company_name"
+    t.string   "contact_name"
+    t.string   "country"
+    t.string   "timezone"
+    t.string   "token"
+    t.datetime "verified_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
