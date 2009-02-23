@@ -7,6 +7,7 @@
     %meta{'http-equiv' => "Content-Type", :content => "text/html;charset=utf-8"}
     = javascript_include_tag :defaults
     = javascript_include_tag "/js-global/FancyZoom.js", "/js-global/FancyZoomHTML.js"
+    = yield :head
   %body{:onload => "setupZoom()"}
     #robotwrapper
       #wrap
@@ -23,59 +24,7 @@
             %img{:src => "/images/header_logo.png", :alt => "Robot Mode LLC logo"}
           
         #content
-          #main
-            = yield 
-                  
-          #sidebar
-            = yield :sidebar_top
-            %h2 We have the technology.
-            %p Your business, better than it was before. Better, stronger, faster.
-            %p
-              We can help you improve, create, sell, advertise, and secure your business
-              or product using the latest web technologies and best practices. We focus on
-              collaboration, agile development, and making things look good.
-            %h2 What We Do
-            %ul
-              %li{:class => "listhead"} Development
-              %li Web apps with Ruby on Rails and Adobe Flex
-              %li Desktop application development with Adobe AIR
-              %li eCommerce for digital and physical goods
-            %ul
-              %li{:class => "listhead"} Consulting
-              %li Traffic analytics and online advertising
-              %li Development best practices and workflow
-              %li Network and application security
-              
-            %h2 Stay in Touch
-            %p Sign up for our mailing list to find out about new products and services.
-            %form{:action => "http://mailer.robotmo.de/t/r/s/fktud/", :method => "post"}
-              %p
-                %label{:for => "name"}
-                  Name:
-                %br
-                %input{:type => "text", :name => "cm-name", :id => "name"}
-                %br
-                %label{:for => "fktud-fktud"}
-                  Email:
-                %br
-                %input{:type =>"text", :name => "cm-fktud-fktud", :id => "fktud-fktud"}
-                %input{:type => "submit", :value => "Subscribe"}
-                %br
-                %span.subtext
-                  Powered by Robot Mailer
-            %h2 About Us
-            %p
-              Robot Mode LLC is a small, agile development company located in the heart of sunny
-              downtown San Diego, California, right next to Horton Plaza and the Gaslamp District.
-              When we're not hammering away at code, we frequent
-              %a{:href => "http://www.thelocalsandiego.com/"} The Local
-              and
-              %a{:href => "http://bowlevt.com/"} East Village Tavern &amp; Bowl
-              \.
-            %p
-              Collectively, we have backgrounds in Ruby on Rails, Adobe AIR, Adobe Flex,
-              adult digital media, high-traffic commercial websites, Top Secret military
-              networks, aircraft carriers, and user experience design.
+          = yield 
           
         #footer
           %p

@@ -88,61 +88,6 @@ p, li {
   width: 950px;
   margin-bottom: 50px; }
 
-#main {
-  float: left;
-  width: 590px;
-  padding-right: 40px;
-  margin-bottom: 20px; }
-  #main #mailer-features {
-    margin: 0 auto;
-    padding-top: 10px; }
-    #main #mailer-features .feature-row {
-      clear: both; }
-      #main #mailer-features .feature-row .icon {
-        float: left;
-        width: 48px; }
-      #main #mailer-features .feature-row .feature-text {
-        width: 522px;
-        float: right; }
-        #main #mailer-features .feature-row .feature-text h3 {
-          margin-bottom: 3px; }
-  #main .more-mailer-features {
-    clear: both;
-    padding-top: 20px; }
-    #main .more-mailer-features h3 {
-      padding-top: 10px; }
-    #main .more-mailer-features p {
-      font-size: 1.0em;
-      padding-top: 3px; }
-    #main .more-mailer-features .left {
-      float: left;
-      width: 285px; }
-    #main .more-mailer-features .right {
-      float: right;
-      width: 285px; }
-
-#sidebar {
-  float: right;
-  width: 320px; }
-  #sidebar h2 {
-    margin-bottom: 10px; }
-  #sidebar p {
-    font-size: 1.2em; }
-  #sidebar span.subtext {
-    font-size: 0.8em;
-    color: #444444; }
-  #sidebar ul {
-    list-style: none;
-    margin: 0 0 10px 0;
-    padding-left: 1em;
-    text-indent: -1em; }
-  #sidebar li {
-    font-size: 1.2em;
-    margin: 0;
-    padding-bottom: 2px; }
-  #sidebar li.listhead {
-    font-weight: bold; }
-
 #footer {
   clear: both;
   border-top: 1px solid #9AA7AB;
