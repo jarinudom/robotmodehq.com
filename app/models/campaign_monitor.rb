@@ -19,7 +19,7 @@ class CampaignMonitor
     string_array = []
     
     doc.search('//string').each do |string|
-      string_array << string.inner_html
+      string_array << CGI.unescapeHTML(string.inner_html)
     end
     
     string_array
