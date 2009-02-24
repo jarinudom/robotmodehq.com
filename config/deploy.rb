@@ -43,11 +43,6 @@ ssh_options[:keys] = %w(/Users/jarinudom/.ssh/id_rsa)
 ssh_options[:port] = 30000
 
 
-desc "Make symlink for database yaml" 
-task :symlink do
-  run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml" 
-end
-
 namespace :deploy do
   
   desc "Restarting mod_rails with restart.txt"
@@ -59,4 +54,13 @@ namespace :deploy do
     desc "#{t} task is a no-op with mod_rails"
     task t, :roles => :app do ; end
   end
+  
+  after "deploy:update_code", :link_production_db
+  after "deploy", "deploy:cleanup"
+end
+
+# database.yml task
+desc "Link in the production database.yml"
+task :link_production_db do
+  run "ln -nfs #{deploy_to}/shared/config/database.yml #{release_path}/config/database.yml"
 end
