@@ -22,15 +22,6 @@ config.action_view.cache_template_loading            = true
 # config.action_controller.asset_host = "http://assets.example.com"
 
 ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-  :tls => true,
-  :address => "smtp.gmail.com",
-  :port => 587,
-  :domain => "robotmo.de",
-  :authentication => :plain,
-  :user_name => "no-reply@robotmo.de",
-  :password => "KIH&[pji/5V5"
-}
 
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
