@@ -20,8 +20,8 @@ class CampaignMonitor
     @company_name = options[:company_name] if options[:company_name]
     @contact_name = options[:contact_name] if options[:contact_name]
     @email = options[:email] if options[:email]
-    @country = options[:country] if options[:country]
-    @timezone = options[:timezone] if options[:timezone]
+    @country = CGI.unescapeHTML(options[:country]) if options[:country]
+    @timezone = CGI.unescapeHTML(options[:timezone]) if options[:timezone]
   end
   
   def save
@@ -42,8 +42,8 @@ class CampaignMonitor
             "CompanyName"   => @company_name.to_s,
             "ContactName"   => @contact_name.to_s,
             "EmailAddress"  => @email.to_s,
-            "Country"       => CGI.unescapeHTML(@country.to_s),
-            "Timezone"      => CGI.unescapeHTML(@timezone.to_s)}
+            "Country"       => @country.to_s,
+            "Timezone"      => @timezone.to_s}
     
     result = Net::HTTP.post_form(URI.parse(req), data)
     
