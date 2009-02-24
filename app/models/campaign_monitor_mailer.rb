@@ -6,7 +6,7 @@ class CampaignMonitorMailer < ActionMailer::Base
     recipients mailer_signup.email
     from       'activate@robotmo.de'
     sent_on    sent_at
-    
+    content_type "text/html"
     body       :mailer_signup => mailer_signup
   end
 

@@ -1,0 +1,9 @@
+!!!
+
+%p Thank you for signing up for a Robot Mailer account!
+
+%p All we need to finish creating your account is for you to verify your email address by clicking the following link:
+
+%p
+  %a{:href => "#{verify_mailer_signup_url(@mailer_signup)}?t=#{@mailer_signup.token}"}
+    == #{verify_mailer_signup_url(@mailer_signup)}?t=#{@mailer_signup.token}
