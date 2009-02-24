@@ -11,6 +11,6 @@ class MailerSignup < ActiveRecord::Base
   end
   
   def send_verification
-    CampaignMonitorMailer.create_confirm(self)
+    CampaignMonitorMailer.deliver_confirm(self)
   end
 end
