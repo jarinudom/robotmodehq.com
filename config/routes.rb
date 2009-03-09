@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   
   map.connect 'mailer', :controller => 'mailer'
+  map.connect 'shopkeeper/:action', :controller => 'shopkeeper'
   
   map.namespace :mailer do |mailer|
     mailer.resources :signups, :only =>       [:new, :create],
