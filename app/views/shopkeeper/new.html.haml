@@ -1,7 +1,21 @@
-%h1 Authorize a new shop
+!!! XML
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", 'xml:lang' => "en", :lang => "en"}
+  %head
+    %title Authorize Shopify Store
+    %meta{:name => "viewport", :content => "width=devicewidth; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"}
+    %meta{:name => "apple-touch-fullscreen", :content => "YES"}
+    %link{:rel => "stylesheet", :href => "/stylesheets/iui.css"}
+    %script{:type => "application/x-javascript", :src => "/javascripts/iui.js"}
 
-- form_tag 'go', :method => :get do
-  http://
-  = text_field_tag 'subdomain'
-  \.myshopify.com
-  = submit_tag "Authorize"
+  %body
+    .toolbar
+      %h1 Authorize Shop
+
+    - form_tag 'go', :method => :get, :class => "panel", :title => "Authorize", :selected => "true" do
+      http://
+      = text_field_tag 'subdomain', nil, :class => "subdomainField", :style => "width:130px;"
+      \.myshopify.com
+      %br
+      %br
+      = submit_tag "Continue"

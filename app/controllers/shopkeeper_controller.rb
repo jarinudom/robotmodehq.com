@@ -1,9 +1,8 @@
 require 'digest/md5'
 
 class ShopkeeperController < ApplicationController
-  
+  layout nil, :only => :new
   def new
-    
   end
   
   def auth
