@@ -2,6 +2,11 @@ require 'digest/md5'
 
 class ShopkeeperController < ApplicationController
   layout nil, :only => :new
+  
+  def index
+    render :action => "index", :layout => "application"
+  end
+  
   def new
   end
   

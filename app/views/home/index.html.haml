@@ -2,6 +2,26 @@
   %link{:rel => "stylesheet", :href => "/stylesheets/home.css"}
 
 #main
+  #shopkeeper
+    %h1 Manage Shopify stores with Shopkeeper
+    = link_to image_tag("shopkeeper/iphonesmall1.jpg", :alt => "Download from the App Store"), :controller => :shopkeeper
+    .description
+      %p
+        We're very proud to announce
+        <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=309568248&mt=8">Shopkeeper</a>, our first iPhone application. We've set up
+        several of our clients with the excellent Shopify hosted eCommerce solution, and we
+        noticed our clients needed a way to manage their Shopify stores on the go.
+      %ul
+        %li Manage multiple stores
+        %li See when you have pending orders
+        %li Get the shipping address and line items for your open orders any time, anywhere
+        %li Check your product inventory quickly and easily
+        %li Uses SSL to ensure that all customer information is secure
+      %p
+        = link_to "Download from the App Store", "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=309568248&mt=8"
+        \|
+        = link_to "Learn more...", :controller => :shopkeeper
+
   %h1 Introducing Robot Mailer
   %p
     Robot Mailer is a new service we've put together for just one purpose - helping you kick ass at email marketing. No setup fee, no monthly fees, and each mailer is only $5 plus 2 cents per recipient.

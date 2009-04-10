@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.namespace :mailer do |mailer|
     mailer.resources :signups, :only =>       [:new, :create],
-                               :member =>     {:verify => :get},
+                               :member =>     {:verify => :get, :index => :get},
                                :collection => {:account_created => :get,
                                                :signup_created => :get,
                                                :create_account => :post}

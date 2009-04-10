@@ -3,6 +3,21 @@
   width: 590px;
   padding-right: 40px;
   margin-bottom: 20px; }
+  #main #shopkeeper {
+    margin-bottom: 40px; }
+    #main #shopkeeper .description {
+      width: 420px; }
+    #main #shopkeeper p {
+      text-align: justify; }
+    #main #shopkeeper img {
+      float: right;
+      margin-top: 12px;
+      margin-right: 10px; }
+    #main #shopkeeper ul {
+      margin: 0;
+      padding: 0 0 0 30px; }
+    #main #shopkeeper li {
+      margin: 5px 0px 0px 0px; }
   #main #mailer-features {
     margin: 0 auto;
     padding-top: 10px; }
@@ -16,6 +31,8 @@
         float: right; }
         #main #mailer-features .feature-row .feature-text h3 {
           margin-bottom: 3px; }
+        #main #mailer-features .feature-row .feature-text p {
+          margin-top: 0px; }
   #main .more-mailer-features {
     clear: both;
     padding-top: 20px; }
