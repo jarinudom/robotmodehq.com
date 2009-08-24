@@ -14,7 +14,7 @@ class ShopkeeperController < ApplicationController
     @subdomain = params[:shop].split('.').first
     @api_key = Digest::MD5.hexdigest(SHOPKEEPER_SECRET + params[:t])
     
-    redirect_to "shopkeeper://addshop?subdomain=#{@subdomain}&apiKey=#{@api_key}"
+    redirect_to "shopkeeper://addshop/?subdomain=#{@subdomain}&apiKey=#{@api_key}"
   end
   
   def go
