@@ -5,3 +5,7 @@ config/database.yml
 db/*.sqlite3
 *.swp
 tmp/tags
+public/stylesheets/application.css
+public/stylesheets/home.css
+public/stylesheets/mailer.css
+public/stylesheets/norobot.css
