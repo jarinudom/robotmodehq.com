@@ -28,7 +28,7 @@ set :deploy_to, "/home/#{user}/public_html/#{application}"
 # =============================================================================
 set :scm, "git"
 set :deploy_via, :remote_cache 
-set :repository, "git@github.com:jarinudom/robotmo.de.git"
+set :repository, "git@codebasehq.com:robotmode/robotmode/website.git"
 set :git_enable_submodules, 1
 set :branch, "master"
 set :git_shallow_clone, 1
