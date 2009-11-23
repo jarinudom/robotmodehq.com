@@ -9,28 +9,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090223104619) do
-
-  create_table "mailer_signups", :force => true do |t|
-    t.string   "email"
-    t.string   "company_name"
-    t.string   "contact_name"
-    t.string   "country"
-    t.string   "timezone"
-    t.string   "token"
-    t.datetime "verified_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
-  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+ActiveRecord::Schema.define(:version => 0) do
 
 end

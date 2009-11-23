@@ -5,12 +5,6 @@ module NavigationHelpers
     when /the homepage/i
       root_path
     
-    when /the Robot Mailer product page/i
-      "/mailer"
-      
-    when /the Robot Mailer signup page/i
-      "/mailer/signups/new"
-    
     else
       raise "Can't find mapping from \"#{page_name}\" to a path."
     end
