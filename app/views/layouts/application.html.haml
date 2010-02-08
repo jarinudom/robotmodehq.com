@@ -35,17 +35,6 @@
             \ / Copyright &copy;2009 Robot Mode LLC
             
     = javascript_include_tag "http://tweetboard.com/tb.js?v=1.0&user=robotmode"
-    
-    = javascript_include_tag "http://static.getclicky.com/js"
-    :javascript
-      clicky.init(181459);
-    %noscript
-      %p
-        %img{:alt => "Clicky", :width => "1", :height => "1", :src => "http://static.getclicky.com/181459ns.gif"}
-        
-    = javascript_include_tag "//static.woopra.com/js/woopra.v2.js"
-    :javascript
-      woopraTracker.track();
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
