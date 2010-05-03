@@ -35,6 +35,14 @@
             \ / Copyright &copy;2009 Robot Mode LLC
             
     = javascript_include_tag "http://tweetboard.com/tb.js?v=1.0&user=robotmode"
+    
+    / Clicky Analytics Code
+    = javascript_include_tag "http://static.getclicky.com/js"
+    :javascript
+      clicky.init(209604);
+    %noscript
+      %p
+        = image_tag "http://in.getclicky.com/209604ns.gif", :alt => "Clicky", :width => "1", :height => "1"
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
