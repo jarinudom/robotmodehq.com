@@ -1,0 +1,7 @@
+@media projection, screen {
+.tabs-hide {display: none;}
+}
+
+@media print {
+.tabs-nav {display: none;}
+}

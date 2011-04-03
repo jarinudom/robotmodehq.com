@@ -1,0 +1,72 @@
+/ Main body wrapper starts here
+#wrapper
+  #content
+    / Site Navigation starts here
+    %ul#menu
+      %li= link_to "Home", "#home"
+      %li= link_to "About", "#about"
+      %li= link_to "Contact", "#contact"
+    / Home page starts here
+    #home
+      #home-intro
+        %p Hi! We are
+        %h1 Robot Mode
+        %p We're developers, and we're here to help.
+      .sep.vert-space
+      #myTweets.twitters
+    / Home page ends here
+    / About page starts here
+    #about
+      %h2 about
+      %p
+        We're a small development shop based in San Diego, California. We care about clean design, good code, and things that just work.
+      %div{:style => "clear:both"}
+      .half-block
+        %h3 what we do
+        %ul
+          %li web applications
+          %li web design
+          %li mobile websites
+          %li iPhone and iPad apps
+          %li eCommerce sites
+      .half-block.width-fix
+        %h3 what we use
+        %ul
+          %li Ruby on Rails
+          %li HTML5 and CSS3
+          %li iOS
+          %li WebOS
+    / About page ends here
+    / Contact page starts here
+    #contact
+      %h2 contact
+      %p Please feel free to get a hold of us for rates or examples of our work. We're usually booked up a week or two in advance, but if you have something time-sensitive we can probably work something out.
+      %div{:style => "clear:both"}
+      / clear
+      .half-block
+        / get in touch block
+        %h3 get in touch
+        %ul
+          %li.mail-list
+            = mail_to "jarin@robotmodehq.com"
+          %li.phone-list
+            619-66-DROID
+            %br
+            619-663-7643
+          %li.website-list
+            = link_to "robotmodehq.com", "http://robotmodehq.com"
+          %li.blog-list
+            = link_to "jarinheit.posterous.com", "http://jarinheit.posterous.com"
+      .half-block.width-fix
+        / me elsewhere block
+        %h3 Jarin Udom (founder)
+        %a{:href => "http://facebook.com/jarin"}
+          %img.social-icon{:align => "left", :alt => "pic", :src => "images/contact-facebook.png"}/
+        %a{:href => "http://linkedin.com/in/jarinudom"}
+          %img.social-icon{:align => "left", :alt => "pic", :src => "images/contact-linkedin.png"}/
+        %a{:href => "http://twitter.com/jarin"}
+          %img.social-icon{:align => "left", :alt => "pic", :src => "images/contact-twitter.png"}/
+    / Contact page ends here
+  / Content divends here
+/ wrapper ends here
+
