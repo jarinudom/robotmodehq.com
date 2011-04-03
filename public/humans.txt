@@ -3,18 +3,15 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
-
-/* THANKS */
-  Names (& URL): 
+  Founder and Lead Developer: Jarin Udom
+  Site: http://jarinudom.com
+  Twitter: http://twitter.com/jarin
+  Location: Olympia, WA
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Modernizr, jQuery, Sinatra, Padrino
+  Software: MacVim
   
 
                                     
