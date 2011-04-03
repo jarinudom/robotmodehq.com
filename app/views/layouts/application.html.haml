@@ -34,15 +34,19 @@
             %a{:href => "http://validator.w3.org/check?uri=referer"} Valid XHTML
             \ / Copyright &copy;2009 Robot Mode LLC
             
-    = javascript_include_tag "http://tweetboard.com/tb.js?v=1.0&user=robotmode"
-    
     / Clicky Analytics Code
-    = javascript_include_tag "http://static.getclicky.com/js"
     :javascript
-      clicky.init(209604);
+      var clicky_site_id = 66406555;
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//static.getclicky.com/js';
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+      })();
     %noscript
-      %p
-        = image_tag "http://in.getclicky.com/209604ns.gif", :alt => "Clicky", :width => "1", :height => "1"
+      %p= image_tag "//in.getclicky.com/66406555ns.gif"
+
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
