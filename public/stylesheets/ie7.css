@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#menu
+{
+	margin-top:-46px;
+}
+
+#home-intro
+{
+	margin: 100px 0 0 200px;
+}
+
+#home, #work, #about, #contact
+{
+	margin-top: -16px;;
+}
