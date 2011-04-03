@@ -72,8 +72,8 @@ getTwitters('myTweets', {
 
 
 /* Code for the Pretty photo effect on clicking thumbnails in Works section */
-$(document).ready(function(){
+/* $(document).ready(function(){
   $(".gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'light_rounded'});
 });
-
+*/
 
