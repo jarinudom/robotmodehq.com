@@ -115,6 +115,7 @@ GEM
     rack-test (0.5.7)
       rack (>= 1.0)
     rake (0.8.7)
+    refraction (0.2.0)
     rest-client (1.6.1)
       mime-types (>= 1.16)
     rspec (2.5.0)
@@ -156,5 +157,6 @@ DEPENDENCIES
   rack-flash
   rack-test
   rake
+  refraction
   rspec
   thin

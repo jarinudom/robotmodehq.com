@@ -3,6 +3,8 @@ class RobotMode < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
 
+  use Refraction
+
   ##
   # Application configuration options
   #
@@ -24,6 +26,18 @@ class RobotMode < Padrino::Application
   #     disable :asset_stamp # no asset timestamping for dev
   #   end
   #
+
+  Refraction.configure do |req|
+
+    if req.host == "www.robotmodehq.com"
+      req.permanent! :host => "robotmodehq.com"  
+    end
+
+    if req.path == "/+"
+      req.permanent! "https://plus.google.com/u/0/107677582398305727749"
+    end
+
+  end
 
   ##
   # You can manage errors like:
